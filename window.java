@@ -15,7 +15,6 @@ public class window{
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             for (int i = 0; i < squares.size(); i++) {
-                System.out.println(squares.size());
                 if (i < 5) {
                     squares.get(i).setBounds((10 + (i * 120)), (10), 110, 110);
                     frame.add(squares.get(i));
@@ -28,14 +27,14 @@ public class window{
                     squares.get(i).setBounds((10 + ((i - 10) * 120)), (250), 110, 110);
                     frame.add(squares.get(i));
                 }
-//                else if (i < 20){
-//                    squares.get(i).setBounds((10 + ((i - 15) * 120)), (370), 110, 110);
-//                    frame.add(squares.get(i));
-//                }
-//                else{
-//                    squares.get(i).setBounds((10 + ((i - 20) * 120)), (490), 110, 110);
-//                    frame.add(squares.get(i));
-//                }
+                else if (i < 20){
+                    squares.get(i).setBounds((10 + ((i - 15) * 120)), (370), 110, 110);
+                    frame.add(squares.get(i));
+                }
+                else{
+                    squares.get(i).setBounds((10 + ((i - 20) * 120)), (490), 110, 110);
+                    frame.add(squares.get(i));
+                }
                 //To display the window
                 frame.setSize(800, 700);
                 frame.setLayout(null);

@@ -42,18 +42,21 @@ public class Board {
         // In the case of an OutOfBoundsException the program displays an error message and exits with a status: 2
 
         Random random = new Random();
+        ArrayList<Integer> randNums = new ArrayList<Integer>();
         ArrayList<String> conditions = GenerateConditions();
         ArrayList<JTextArea> squares = new ArrayList<>();
 
         try {
 
-            for (int i = 0; i < 25; i++) {
+            while (squares.size() <25){
                 int index = random.nextInt(conditions.size());
-                String cond = conditions.get(index);
-                JTextArea textArea = new JTextArea(cond);
-                textArea.setLineWrap(true);
-                conditions.remove(index);
-                squares.add(textArea);
+                if (!(randNums.contains(index))){
+                    randNums.add(index);
+                    String cond = conditions.get(index);
+                    JTextArea textArea = new JTextArea(cond);
+                    textArea.setLineWrap(true);
+                    squares.add(textArea);
+                }
             }
 
             return squares;
