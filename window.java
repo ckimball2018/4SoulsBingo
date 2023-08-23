@@ -1,41 +1,57 @@
 // Craig Kimball 8/23/23
 
 import java.awt.*;
+import java.io.IOException;
+import java.util.ArrayList;
 import javax.swing.*;
 
-public class window {
+public class window{
 
-    private static void createWindow() {
-        JFrame frame = new JFrame("GUI");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    private static void createWindow() throws IOException {
+        try {
+            Board board = new Board();
+            ArrayList<JTextArea> squares = board.GenerateJTextArea();
+            JFrame frame = new JFrame("GUI");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JTextArea field = new JTextArea("A player killed 2 or more monsters  in the same turn");
-        field.setLineWrap(true);
-        frame.add(field);
-
-        field.setBounds(10,0, 100, 100);
-
-        JTextArea field1 = new JTextArea("The top of the treasure deck is placed on the bottom of the treasure deck");
-        field1.setLineWrap(true);
-        frame.add(field1);
-
-        field1.setBounds(120,0, 100, 100);
-
-
-//        String buttonText = new String("A player killed 2 monsters in 1 turn");
-//        JButton square = new JButton();
-//        square.setBounds(120, 0, 120, 120);
-//        frame.add(square);
-
-
-        //To display the window
-        frame.setSize(800,600);
-        frame.setLayout(null);
-        frame.setVisible(true);
-
+            for (int i = 0; i < squares.size(); i++) {
+                System.out.println(squares.size());
+                if (i < 5) {
+                    squares.get(i).setBounds((10 + (i * 120)), (10), 110, 110);
+                    frame.add(squares.get(i));
+                }
+                else if (i < 10){
+                    squares.get(i).setBounds((10 + ((i - 5) * 120)), (130), 110, 110);
+                    frame.add(squares.get(i));
+                }
+                else if (i < 15){
+                    squares.get(i).setBounds((10 + ((i - 10) * 120)), (250), 110, 110);
+                    frame.add(squares.get(i));
+                }
+//                else if (i < 20){
+//                    squares.get(i).setBounds((10 + ((i - 15) * 120)), (370), 110, 110);
+//                    frame.add(squares.get(i));
+//                }
+//                else{
+//                    squares.get(i).setBounds((10 + ((i - 20) * 120)), (490), 110, 110);
+//                    frame.add(squares.get(i));
+//                }
+                //To display the window
+                frame.setSize(800, 700);
+                frame.setLayout(null);
+                frame.setVisible(true);
+            }
+        }
+        catch (IOException ex){
+            System.out.println("Error IOException");
+            System.exit(3);
+        }
     }
 
-    public static void main (String[] args){
+
+
+    public static void main (String[] args) throws IOException {
+
         createWindow();
     }
 }
