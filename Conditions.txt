@@ -35,3 +35,15 @@ A player kills 2 or more monsters in one turn
 A player has 3 or more attack in one turn
 A player makes a monster have a 1+ to hit
 Another player calls cents "bitcoin"
+Another player bargains with another player
+A player dies to the same monster twice
+A player loses more than 10 cents in 1 turn
+A player dies to troll bombs
+The shop gets rerolled 3 times in 1 turn
+A tier 4 treasure card gets discarded (Abaddon, 20/20, Sacred Heart, Godhead, etc.)
+A monster with 5 or more health is defeated
+Lost soul is played or discarded
+A player controls 5 or more souls
+A player controls 6 or more souls
+A player controls 7 or more souls
+A player controls 8 or more souls

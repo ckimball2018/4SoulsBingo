@@ -22,7 +22,7 @@ public class Board {
 
             while (buffer.ready()) {
                 String cond = buffer.readLine();
-               // System.out.println(cond);
+                // System.out.println(cond);
                 conditions.add(cond);
             }
 

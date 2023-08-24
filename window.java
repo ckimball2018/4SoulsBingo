@@ -31,10 +31,11 @@ public class window{
                     squares.get(i).setBounds((10 + ((i - 15) * 120)), (370), 110, 110);
                     frame.add(squares.get(i));
                 }
-                else{
+                else if (i < 25){
                     squares.get(i).setBounds((10 + ((i - 20) * 120)), (490), 110, 110);
                     frame.add(squares.get(i));
                 }
+
                 //To display the window
                 frame.setSize(800, 700);
                 frame.setLayout(null);
