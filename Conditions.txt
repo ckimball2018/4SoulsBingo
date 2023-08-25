@@ -28,14 +28,14 @@ The Monster Deck has expanded to 5 or more slots
 The Shop has expanded to 5 or more slots
 A player dies to a non-boss poop themed monster
 A player gets divorced :(
-A player kills a monster that grants a soul only using treasures or loot cards
+A player kills a monster that grants a soul only using treasures, loot cards or monster card effects
 A player gains 2 or more curses at the same time
 A player gives out 2 or more curses in one game
 A player kills 2 or more monsters in one turn
 A player has 3 or more attack in one turn
-A player makes a monster have a 1+ to hit
+A player gains 2+ to attack rolls
 Another player calls cents "bitcoin"
-Another player bargains with another player
+2 other players make a bargain
 A player dies to the same monster twice
 A player loses more than 10 cents in 1 turn
 A player dies to troll bombs
@@ -47,3 +47,14 @@ A player controls 5 or more souls
 A player controls 6 or more souls
 A player controls 7 or more souls
 A player controls 8 or more souls
+A player has 8 or more loot cards in hand
+Another player refers to a room card as a "Wiseau"
+A player gets 2 or more event monster cards in 1 turn
+A player gains a treasure and loses it in the same turn
+A butter bean gets gets countered
+A player predicts the future! (they successfully triggered Crystal Ball) 
+A player obtains 2 or more non-eternal dice roll result treasure cards (Dead Bird, Charged Baby, etc.)
+A player gains more than 12 cents in a turn
+Any holy monster's effects are triggered twice
+Any cursed monster's effects are triggered twice
+The monster board consists of only holy or cursed monsters
