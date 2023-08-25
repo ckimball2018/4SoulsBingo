@@ -15,6 +15,13 @@ public class window{
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             for (int i = 0; i < squares.size(); i++) {
+                if (i == 12){
+                    JTextArea freeSpace = new JTextArea("Free Space");
+                    freeSpace.setWrapStyleWord(true);
+                    freeSpace.setBounds(250, 250, 110, 110);
+                    frame.add(freeSpace);
+                }
+
                 if (i < 5) {
                     squares.get(i).setBounds((10 + (i * 120)), (10), 110, 110);
                     frame.add(squares.get(i));
@@ -23,7 +30,7 @@ public class window{
                     squares.get(i).setBounds((10 + ((i - 5) * 120)), (130), 110, 110);
                     frame.add(squares.get(i));
                 }
-                else if (i < 15){
+                else if (i < 15 && i != 12){
                     squares.get(i).setBounds((10 + ((i - 10) * 120)), (250), 110, 110);
                     frame.add(squares.get(i));
                 }

@@ -55,6 +55,7 @@ public class Board {
                     String cond = conditions.get(index);
                     JTextArea textArea = new JTextArea(cond);
                     textArea.setLineWrap(true);
+                    textArea.setWrapStyleWord(true);
                     squares.add(textArea);
                 }
             }
