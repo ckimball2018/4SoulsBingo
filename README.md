@@ -14,6 +14,8 @@ Squares will be replaced by buttons which will change colors to mark which condi
 A "Shuffle" button, which easily randomizes a new board <br>
 A "Clear" button which unmarks all met conditions <br>
 A "Share" button which will share your boards with friends <br>
+A "Add Condition" button that allows the user to create custom conditions <br>
+A nighttime mode theme
 And possibly more! Who knows!
 
 ### IDE Information
